@@ -16,6 +16,14 @@ const LinkedlnButton: React.FC = () => {
       color="primary"
       startIcon={<LinkedInIcon />}
       onClick={handleClick}
+      sx={{
+        backgroundColor: "background.default", // Cor de fundo
+        "&:hover": {
+          color: "secondary.main", // Muda a cor do texto no hover
+          borderColor: "secondary.main", // Muda a cor da borda no hover
+          backgroundColor: "background.default", // Mantém o background igual
+        },
+      }}
     >
       Linkedln
     </Button>

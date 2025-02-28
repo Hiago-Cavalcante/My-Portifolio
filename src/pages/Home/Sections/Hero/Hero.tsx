@@ -1,41 +1,53 @@
-import { Container, styled, Typography, Divider } from "@mui/material";
-import Avatar from "../../../../assets/images/avatar.jpeg";
-import Grid from "@mui/material/Grid2"; // Importando Grid2 corretamente
+import { Container, styled, Typography, Divider, Box } from "@mui/material";
+import Avatar from "../../../../assets/images/avatar6.jpg";
+import Grid from "@mui/material/Grid2"; // Mantido como Grid2
 import LinkedlnButton from "./components/Linkedln";
 import GithubButton from "./components/GitHubButton";
+import AnimationBackground from "../../../../components/AnimatedBackground";
 
 const Hero = () => {
-  const StyledHero = styled("div")(() => ({
-    backgroundColor: "black",
+  const StyledHero = styled("div")(({ theme }) => ({
+    backgroundColor: theme.palette.background.default,
     height: "100vh",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+    position: "relative", // Para sobreposição correta
+    overflow: "hidden",
   }));
 
   const StyledImg = styled("img")(() => ({
     width: "100%",
     borderRadius: "50%",
+    border: "1px solid #000",
+    position: "relative",
+    zIndex: 1, // Mantém a imagem acima da animação
   }));
 
   return (
     <StyledHero>
+      {/* Background Animado */}
+      <AnimationBackground />
+
       <Container maxWidth="lg">
         <Grid container spacing={2}>
-          <Grid size={{ xs: 12, md: 4 }}>
-            <StyledImg src={Avatar} alt="Avatar" />
+          {/* Avatar */}
+          <Grid size={{ xs: 12, md: 3 }}>
+            <Box position="relative">
+              <StyledImg src={Avatar} alt="Avatar" />
+            </Box>
           </Grid>
 
           {/* Texto e Botões */}
-          <Grid size={{ xs: 12, md: 8 }} textAlign="center">
-            <Typography variant="h1" color="primary">
+          <Grid size={{ xs: 12, md: 9 }} textAlign="center">
+            <Typography variant="h2" color="primary">
               Hiago Cavalcante
             </Typography>
             <Typography variant="h4" color="primary">
-              Desenvolvedor de Software Front End
+              Desenvolvedor de Software Front-End
             </Typography>
             <Grid size={{ xs: 12 }}>
-              <Divider sx={{ my: 2, backgroundColor: "white" }} />
+              <Divider sx={{ my: 2, backgroundColor: "black" }} />
             </Grid>
             <Grid display="flex" justifyContent="center" gap={2}>
               <LinkedlnButton />
