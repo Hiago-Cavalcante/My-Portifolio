@@ -14,31 +14,31 @@ const Hero = () => {
     justifyContent: "center",
     position: "relative", // Para sobreposição correta
     overflow: "hidden",
+    [theme.breakpoints.up("xs")]: {
+  
+    },
   }));
 
   const StyledImg = styled("img")(() => ({
-    width: "100%",
+    width: "90%",
     borderRadius: "50%",
     border: "1px solid #000",
-    position: "relative",
+    
     zIndex: 1, // Mantém a imagem acima da animação
   }));
 
   return (
     <StyledHero>
-      {/* Background Animado */}
       <AnimationBackground />
 
       <Container maxWidth="lg">
-        <Grid container spacing={2}>
-          {/* Avatar */}
+        <Grid container spacing={1}>
           <Grid size={{ xs: 12, md: 3 }}>
             <Box position="relative">
               <StyledImg src={Avatar} alt="Avatar" />
             </Box>
           </Grid>
 
-          {/* Texto e Botões */}
           <Grid size={{ xs: 12, md: 9 }} textAlign="center">
             <Typography variant="h2" color="primary">
               Hiago Cavalcante

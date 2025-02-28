@@ -1,5 +1,7 @@
 import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 
+
+
 let theme = createTheme({
   palette: {
     primary: {
@@ -15,7 +17,7 @@ let theme = createTheme({
   },
   typography: {
     fontFamily:
-      "SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif",
+      "'Montserrat', sans-serif",
   },
 });
 

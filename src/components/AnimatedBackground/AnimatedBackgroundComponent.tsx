@@ -25,7 +25,7 @@ const AnimatedBackground = () => {
       height,
       backgroundColor: color,
       transform: "skew(-50deg)",
-      animation: `moveBar ${duration} linear forwards`, // Mudado de infinite para forwards
+      animation: `moveBar ${duration} linear infinite`,
       opacity: 0.6,
       left,
       top,
@@ -94,8 +94,7 @@ const AnimatedBackground = () => {
         {`
           @keyframes moveBar {
             0% { transform: skew(-40deg) translateY(100%); }
-            100% { transform: skew(-40deg) translateY(-1500px); } /* Alterado para parar no topo (0 em vez de -1000px) */
-          }
+            100% { transform: skew(-40deg) translateY(-1500px); } 
         `}
       </style>
     </BackgroundWrapper>
