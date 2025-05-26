@@ -14,14 +14,13 @@ import { GitHub, Launch } from "@mui/icons-material";
 import { motion } from "framer-motion";
 
 const Projects = () => {
-  const projects = [
-    {
+  const projects = [    {
       title: "Dota 2 Team Builder",
       description: "Uma aplicação web para gerenciar equipes de Dota 2, permitindo criação de times, gerenciamento de jogadores.",
       technologies: ["React", "TypeScript", "Material-UI", "Redux"],
       githubUrl: "https://github.com/Hiago-Cavalcante/Dota_2_Teams",
       liveUrl: "https://example.com",
-      image: "/api/placeholder/400/250"
+      image: "/src/assets/Images/Dota2.png"
     },
     {
       title: "Agenda de Vacinas",
@@ -29,7 +28,7 @@ const Projects = () => {
       technologies: ["React", "Node.js", "PostgreSQL", "Nest.js"],
       githubUrl: "https://github.com/Hiago-Cavalcante/Agenda-Vacina",
       liveUrl: "https://example.com",
-      image: "/api/placeholder/400/250"
+      image: "/src/assets/Images/avatar6.jpg"
     },
     {
       title: "Furia Fan Chat",
@@ -37,7 +36,7 @@ const Projects = () => {
       technologies: ["React", "Node.js", "Material-UI", "TypeScript"],
       githubUrl: "https://github.com/Hiago-Cavalcante/furia-fan-chat",
       liveUrl: "https://example.com",
-      image: "/api/placeholder/400/250"
+      image: "/src/assets/Images/FuriaFan.png"
     }
   ];
   const StyledProjects = styled("div")(({ theme }) => ({
@@ -85,15 +84,33 @@ const Projects = () => {
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 whileHover={{ y: -8 }}
               >
-                <ProjectCard>
+                <ProjectCard>                <Box
+                  component="img"
+                  src={project.image}
+                  alt={`Preview do ${project.title}`}
+                  sx={{
+                    height: 200,
+                    width: '100%',
+                    objectFit: 'cover',
+                    backgroundColor: 'grey.200',
+                    borderRadius: '4px 4px 0 0'
+                  }}
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.style.display = 'none';
+                    const fallback = target.nextElementSibling as HTMLElement;
+                    if (fallback) fallback.style.display = 'flex';
+                  }}
+                />
                 <Box
                   sx={{
                     height: 200,
                     backgroundColor: 'grey.200',
-                    display: 'flex',
+                    display: 'none',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    color: 'grey.600'
+                    color: 'grey.600',
+                    borderRadius: '4px 4px 0 0'
                   }}
                 >
                   <Typography variant="h6">Preview do Projeto</Typography>

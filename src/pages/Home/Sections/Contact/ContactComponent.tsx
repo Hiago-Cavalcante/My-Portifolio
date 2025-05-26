@@ -154,72 +154,7 @@ const Contact = () => {
           ))}
         </Grid>
 
-        <Box maxWidth="md" mx="auto">
-          <Paper sx={{ p: 4 }}>
-            <Typography variant="h5" textAlign="center" mb={3} color="primary">
-              Envie uma Mensagem
-            </Typography>
-            <Box component="form" onSubmit={handleSubmit}>
-              <Grid container spacing={3}>
-                <Grid item xs={12} md={6}>
-                  <TextField 
-                    label="Nome Completo" 
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    fullWidth 
-                    required 
-                    variant="outlined"
-                  />
-                </Grid>
-                <Grid item xs={12} md={6}>
-                  <TextField 
-                    label="Email" 
-                    name="email"
-                    type="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    fullWidth 
-                    required 
-                    variant="outlined"
-                  />
-                </Grid>
-                <Grid item xs={12}>
-                  <TextField 
-                    label="Mensagem" 
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    multiline 
-                    rows={6} 
-                    fullWidth 
-                    required 
-                    variant="outlined"
-                    placeholder="Conte-me sobre seu projeto ou ideia..."
-                  />
-                </Grid>
-                <Grid item xs={12}>                  <Box textAlign="center">
-                    <Button 
-                      type="submit"
-                      variant="contained" 
-                      color="primary" 
-                      size="large"
-                      startIcon={<Send />}
-                      disabled={loading}
-                      sx={{ 
-                        px: 4, 
-                        py: 1.5,
-                        fontSize: '1.1rem'
-                      }}
-                    >
-                      {loading ? 'Enviando...' : 'Enviar Mensagem'}
-                    </Button>
-                  </Box>
-                </Grid>
-              </Grid>
-            </Box>
-          </Paper>
-        </Box>
+        
         
         <Snackbar
           open={snackbar.open}
