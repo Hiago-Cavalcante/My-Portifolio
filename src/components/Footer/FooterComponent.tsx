@@ -10,8 +10,7 @@ import {
   GitHub, 
   LinkedIn, 
   Email, 
-  Twitter,
-  FavoriteRounded 
+  Twitter
 } from "@mui/icons-material";
 
 const Footer = () => {  const StyledFooter = styled("footer")(({ theme }) => ({

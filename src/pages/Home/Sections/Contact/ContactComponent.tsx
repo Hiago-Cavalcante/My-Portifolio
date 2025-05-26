@@ -1,68 +1,20 @@
 import { 
   Container, 
   Typography, 
-  Box, 
-  TextField, 
-  Button, 
   styled,
   Grid,
   Paper,
   Alert,
   Snackbar
 } from "@mui/material";
-import { Email, Phone, LocationOn, Send } from "@mui/icons-material";
+import { Email, Phone, LocationOn } from "@mui/icons-material";
 import { useState } from "react";
-import { motion } from "framer-motion";
-import emailjs from '@emailjs/browser';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-  
-  const [loading, setLoading] = useState(false);
   const [snackbar, setSnackbar] = useState({
     open: false,
     message: '',
-    severity: 'success' as 'success' | 'error'
-  });
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setLoading(true);
-    
-    try {
-      // Configure seu EmailJS aqui
-      // await emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData, 'YOUR_PUBLIC_KEY');
-      
-      // Simulando envio por enquanto
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      setSnackbar({
-        open: true,
-        message: 'Mensagem enviada com sucesso! Entrarei em contato em breve.',
-        severity: 'success'
-      });
-      setFormData({ name: '', email: '', message: '' });
-    } catch (error) {
-      setSnackbar({
-        open: true,
-        message: 'Erro ao enviar mensagem. Tente novamente.',
-        severity: 'error'
-      });
-    } finally {
-      setLoading(false);
-    }
-  };
+    severity: 'success' as 'success' | 'error'  });
 
   const handleCloseSnackbar = () => {
     setSnackbar({ ...snackbar, open: false });
