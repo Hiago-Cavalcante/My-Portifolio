@@ -1,5 +1,5 @@
 import { Container, styled, Typography, Divider, Box } from "@mui/material";
-import Avatar from "../../../../assets/images/avatar6.jpg";
+import Avatar from "../../../../assets/Images/avatar6.jpg";
 import Grid from "@mui/material/Grid2";
 import LinkedlnButton from "./components/Linkedln";
 import GithubButton from "./components/GitHubButton";
