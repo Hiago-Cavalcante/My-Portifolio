@@ -40,7 +40,7 @@ const Footer = () => {  const StyledFooter = styled("footer")(({ theme }) => ({
             Hiago Cavalcante
           </Typography>
           <Typography variant="body1" color="text.secondary" mb={3}>
-            Desenvolvedor Frontend apaixonado por criar experiências digitais incríveis
+            Desenvolvedor FullStack
           </Typography>
           
           <Box display="flex" justifyContent="center" gap={1} mb={3}>
