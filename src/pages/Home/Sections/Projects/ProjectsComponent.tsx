@@ -14,7 +14,6 @@ import { GitHub, Launch } from "@mui/icons-material";
 import { motion } from "framer-motion";
 import Dota2Image from "../../../../assets/Images/Dota2.png";
 import Avatar6Image from "../../../../assets/Images/Metflix.png";
-import FuriaFanImage from "../../../../assets/Images/FuriaFan.png";
 
 const Projects = () => {
   const projects = [    {
@@ -33,14 +32,7 @@ const Projects = () => {
       liveUrl: "https://met-flix-v2-bmra.vercel.app/",
       image: Avatar6Image
     },
-    {
-      title: "Furia Fan Chat",
-      description: "Chat em tempo real para fãs do Furia, com salas de bate-papo, emojis personalizados e integração com redes sociais.",
-      technologies: ["React", "Node.js", "Material-UI", "TypeScript"],
-      githubUrl: "https://github.com/Hiago-Cavalcante/furia-fan-chat",
-      liveUrl: "https://example.com",
-      image: FuriaFanImage
-    }
+    
   ];
   const StyledProjects = styled("div")(({ theme }) => ({
     backgroundColor: theme.palette.background.default,
