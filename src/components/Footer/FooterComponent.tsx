@@ -27,18 +27,8 @@ const Footer = () => {  const StyledFooter = styled("footer")(({ theme }) => ({
     },
     {
       icon: <LinkedIn />,
-      url: "https://linkedin.com",
+      url: "https://www.linkedin.com/in/hiago-cavalcante-menezes-78b6a4251",
       label: "LinkedIn"
-    },
-    {
-      icon: <Email />,
-      url: "mailto:hiago@exemplo.com",
-      label: "Email"
-    },
-    {
-      icon: <Twitter />,
-      url: "https://twitter.com",
-      label: "Twitter"
     }
   ];
 

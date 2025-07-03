@@ -50,7 +50,11 @@ const AboutMe = () => {
             textAlign: "justify",
           }}
         >
-          Olá! Meu nome é Hiago Cavalcante, sou um desenvolvedor de software, sou estudante da faculdade de Gestão da Informação na Universidade federal de Goias (UFG) e atualemte tenho 23 anos. Desde pequeno sempre tive uma paixão por tecnologia e sempre busquei aprender mais sobre essa área. Mas comecei minha jornada profissional como Suporte Tecnico e, onde tive a oportunidade de aprender sobre redes, sistemas operacionais e resolução de problemas técnicos. Com o tempo, minha curiosidade me levou ao desenvolvimento de software, onde descobri minha verdadeira vocação.
+          Olá! Meu nome é Hiago Cavalcante, tenho 23 anos, sou desenvolvedor de software e atualmente curso Gestão da Informação na Universidade Federal de Goiás (UFG). Minha trajetória na tecnologia começou no suporte técnico, uma fase essencial onde pude entender, na prática, como funcionam as engrenagens por trás das máquinas: redes, sistemas operacionais, manutenção e aquele quebra-cabeça diário de resolver problemas sob pressão.
+
+          Com o tempo, percebi que minha curiosidade ia além de apenas consertar o que já existia. Queria entender como as coisas eram criadas — e foi assim que o desenvolvimento de software entrou na minha vida. Desde então, venho me dedicando a estudar e aplicar esse conhecimento em projetos que me desafiem e me façam crescer como profissional.
+
+          Gosto de ver o impacto real daquilo que construo, mesmo que seja algo pequeno. Gosto de encontrar soluções, pensar de forma lógica e, acima de tudo, aprender constantemente. Estou construindo minha carreira nesse caminho com muito empenho, buscando sempre evoluir de forma prática e consciente.
         </Typography>
 
     
@@ -65,7 +69,7 @@ const AboutMe = () => {
             textAlign: "center",
           }}
         >
-          Vamos construir algo incrível juntos? Estou sempre aberto a novos desafios e 
+          Estou sempre aberto a novos desafios e 
           oportunidades de colaboração!
         </Typography>
       </Box>

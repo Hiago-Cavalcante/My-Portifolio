@@ -59,9 +59,12 @@ const Skills = () => {
                   height: 'auto',
                   '&:hover': {
                     backgroundColor: 'primary.main',
-                    color: 'white',
+                    color: 'primary.contrastText',
                     transform: 'translateY(-2px)',
-                    boxShadow: '0 4px 8px rgba(0,0,0,0.2)'
+                    boxShadow: (theme) => theme.palette.mode === 'dark' 
+                      ? '0 4px 8px rgba(255,255,255,0.1)' 
+                      : '0 4px 8px rgba(0,0,0,0.2)',
+                    borderColor: 'primary.main'
                   },
                   transition: 'all 0.3s ease'
                 }}

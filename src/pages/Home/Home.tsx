@@ -20,7 +20,8 @@ const Home = () => {
       <Skills />
       <Divider />
       <Projects />
-      <Divider />      <Contact />
+      <Divider /> 
+      <Contact />
       <Footer />
     </>
   );
