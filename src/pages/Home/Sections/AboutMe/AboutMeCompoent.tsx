@@ -36,7 +36,7 @@ const AboutMe = () => {
             mb: 4,
           }}
         >
-          Desenvolvedor Full Stack | Criador de Soluções Digitais
+          Desenvolvedor Full Stack 
         </Typography>
 
         <Typography
