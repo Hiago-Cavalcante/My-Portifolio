@@ -12,6 +12,9 @@ import {
 } from "@mui/material";
 import { GitHub, Launch } from "@mui/icons-material";
 import { motion } from "framer-motion";
+import Dota2Image from "../../../../assets/Images/Dota2.png";
+import Avatar6Image from "../../../../assets/Images/Metflix.png";
+import FuriaFanImage from "../../../../assets/Images/FuriaFan.png";
 
 const Projects = () => {
   const projects = [    {
@@ -19,16 +22,16 @@ const Projects = () => {
       description: "Uma aplicação web para gerenciar equipes de Dota 2, permitindo criação de times, gerenciamento de jogadores.",
       technologies: ["React", "TypeScript", "Material-UI", "Redux"],
       githubUrl: "https://github.com/Hiago-Cavalcante/Dota_2_Teams",
-      liveUrl: "https://example.com",
-      image: "/src/assets/Images/Dota2.png"
+      liveUrl: "https://dota-2-teams.vercel.app/",
+      image: Dota2Image
     },
     {
-      title: "Agenda de Vacinas",
-      description: "Aplicativo para agendamento de vacinas, com notificações, lembretes e histórico de vacinação.",
-      technologies: ["React", "Node.js", "PostgreSQL", "Nest.js"],
+      title: "MetFlix",
+      description: "Copia de um site de streaming de filmes e series, usando API do TMDB.",
+      technologies: ["React", "Node.js", "TypeScript", "Material-UI"],
       githubUrl: "https://github.com/Hiago-Cavalcante/Agenda-Vacina",
-      liveUrl: "https://example.com",
-      image: "/src/assets/Images/avatar6.jpg"
+      liveUrl: "https://met-flix-v2-bmra.vercel.app/",
+      image: Avatar6Image
     },
     {
       title: "Furia Fan Chat",
@@ -36,7 +39,7 @@ const Projects = () => {
       technologies: ["React", "Node.js", "Material-UI", "TypeScript"],
       githubUrl: "https://github.com/Hiago-Cavalcante/furia-fan-chat",
       liveUrl: "https://example.com",
-      image: "/src/assets/Images/FuriaFan.png"
+      image: FuriaFanImage
     }
   ];
   const StyledProjects = styled("div")(({ theme }) => ({
