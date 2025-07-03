@@ -14,9 +14,10 @@ import { GitHub, Launch } from "@mui/icons-material";
 import { motion } from "framer-motion";
 import Dota2Image from "../../../../assets/Images/Dota2.png";
 import Avatar6Image from "../../../../assets/Images/Metflix.png";
+import FuriaFanImage from "../../../../assets/Images/image3.png";
 
 const Projects = () => {
-  const projects = [    {
+  const projects = [{
       title: "Dota 2 Team Builder",
       description: "Uma aplicação web para gerenciar equipes de Dota 2, permitindo criação de times, gerenciamento de jogadores.",
       technologies: ["React", "TypeScript", "Material-UI", "Redux"],
@@ -32,7 +33,14 @@ const Projects = () => {
       liveUrl: "https://met-flix-v2-bmra.vercel.app/",
       image: Avatar6Image
     },
-    
+    {
+      title: "Furia Fan Chat",
+      description: "Exemplo nao funcional de um chat para fans da Furia.",
+      technologies: ["React", "Node.js", "Material-UI", "TypeScript"],
+      githubUrl: "https://github.com/Hiago-Cavalcante/furia-fan-chat",
+      liveUrl: "https://furia-fan-chat-psi.vercel.app/",
+      image: FuriaFanImage
+    }
   ];
   const StyledProjects = styled("div")(({ theme }) => ({
     backgroundColor: theme.palette.background.default,
