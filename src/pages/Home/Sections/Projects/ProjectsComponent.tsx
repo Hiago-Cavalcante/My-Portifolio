@@ -27,7 +27,7 @@ const Projects = () => {
     },
     {
       title: "MetFlix",
-      description: "Copia de um site de streaming de filmes e series, usando API do TMDB.",
+      description: "Site baseado em streaming de filmes e séries, usando API do TMDB.",
       technologies: ["React", "Node.js", "TypeScript", "Material-UI"],
       githubUrl: "https://github.com/Hiago-Cavalcante/Agenda-Vacina",
       liveUrl: "https://met-flix-v2-bmra.vercel.app/",
@@ -35,7 +35,7 @@ const Projects = () => {
     },
     {
       title: "Furia Fan Chat",
-      description: "Exemplo nao funcional de um chat para fans da Furia.",
+      description: "Exemplo de um chat para fãs da Furia.",
       technologies: ["React", "Node.js", "Material-UI", "TypeScript"],
       githubUrl: "https://github.com/Hiago-Cavalcante/furia-fan-chat",
       liveUrl: "https://furia-fan-chat-psi.vercel.app/",

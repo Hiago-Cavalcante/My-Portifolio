@@ -54,7 +54,7 @@ const AboutMe = () => {
 
           Com o tempo, percebi que minha curiosidade ia além de apenas consertar o que já existia. Queria entender como as coisas eram criadas — e foi assim que o desenvolvimento de software entrou na minha vida. Desde então, venho me dedicando a estudar e aplicar esse conhecimento em projetos que me desafiem e me façam crescer como profissional.
 
-          Gosto de ver o impacto real daquilo que construo, mesmo que seja algo pequeno. Gosto de encontrar soluções, pensar de forma lógica e, acima de tudo, aprender constantemente. Estou construindo minha carreira nesse caminho com muito empenho, buscando sempre evoluir de forma prática e consciente.
+
         </Typography>
 
     
