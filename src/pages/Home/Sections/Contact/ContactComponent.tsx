@@ -43,7 +43,7 @@ const Contact = () => {
       icon: <Email sx={{ fontSize: 40, color: 'primary.main' }} />,
       title: 'Email',
       info: 'hiagocavalcante03@gmail.com',
-      link: 'hiagocavalcante03@gmail.com'
+      link: 'mailto:hiagocavalcante03@gmail.com'
     },
     {
       icon: <Phone sx={{ fontSize: 40, color: 'primary.main' }} />,
@@ -55,7 +55,7 @@ const Contact = () => {
       icon: <LocationOn sx={{ fontSize: 40, color: 'primary.main' }} />,
       title: 'Localização',
       info: 'Goiânia, GO',
-      link: '#'
+      link: 'https://www.google.com/maps/place/Goi%C3%A2nia,+GO'
     }
   ];
 
